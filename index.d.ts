@@ -52,7 +52,7 @@ export interface GoogleContactsResponseOffline {
 }
 
 export interface GoogleContactsProps {
-  readonly onSuccess: (response: GoogleContactsResponse | GoogleContactsResponseOffline) => void,
+  readonly onSuccess: (response: GoogleContactsResponseOffline) => void,
   readonly onFailure: (error: any) => void,
   readonly clientId: string,
   readonly jsSrc?: string,
